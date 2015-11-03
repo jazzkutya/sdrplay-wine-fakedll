@@ -1,12 +1,18 @@
 The skeleton code was generated with:
 winedump spec mir_sdr_api.dll -I . -C -t
-in a dir with only the original windows mir_sdr_api.dll from sdrplay.com
+in a dir with only the original windows mir_sdr_api.dll from sdrplay.com and
+accompanying mir_sdr.h
 API Version: 1.7
 
 The makefiles were generated with:
 winemaker --nosource-fix --dll --nomfc --wine32 -lmirsdrapi-rsp .
 winemaker --nosource-fix --dll --nomfc -lmirsdrapi-rsp .
 The latter for the 64bit build
+
+More useful read material:
+https://sites.google.com/site/programmersnotebook/how-to-replace-windows-dll-with-wine-dll
+https://www.winehq.org/docs/winelib-guide/index
+
 
 NOTES ABOUT COMPILING
 
