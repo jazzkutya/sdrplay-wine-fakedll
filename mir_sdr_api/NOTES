@@ -1,0 +1,18 @@
+The skeleton code was generated with:
+winedump spec mir_sdr_api.dll -I . -C -t
+in a dir with only the original windows mir_sdr_api.dll from sdrplay.com
+API Version: 1.7
+
+The makefiles were generated with:
+winemaker --nosource-fix --dll --nomfc --wine32 -lmirsdrapi-rsp .
+winemaker --nosource-fix --dll --nomfc -lmirsdrapi-rsp .
+The latter for the 64bit build
+
+NOTES ABOUT COMPILING
+
+I used the wine PPA for ubuntu on 14.04 LTS
+https://launchpad.net/~ubuntu-wine/+archive/ubuntu/ppa
+
+To compile this I used wine1.7-dev from the PPA above.
+
+To compile 32bit on ubuntu I had to install gcc-multilib.
